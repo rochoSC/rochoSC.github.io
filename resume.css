@@ -5,10 +5,17 @@
 
     v0.9: 5/28/09
 
-    design and code by: thingsthatarebrown.com 
+    design and code by: thingsthatarebrown.com
                         (matt brown)
 ---------------------------------------------------------------------------------
 */
+
+h1 {
+  font-size: 290%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 
 
 .msg { padding: 10px; background: #222; position: relative; }
@@ -27,8 +34,8 @@ body { font-family: Georgia; color: #444; }
 #bd, #ft { margin-bottom: 2em; }
 
 /* //-- footer -- */
-#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
-#ft p { margin-bottom: 0; text-align: center;   }
+#ft { padding: 1em 0 5em 0; font-size: 120%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 10px; text-align: center;   }
 
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
@@ -71,4 +78,59 @@ a#pdf:hover { background: #222; }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
+#name {
+  display: none;
+}
 
+.message {
+  text-align: center;
+  font-size: medium;
+}
+
+@media (max-width: 500px) {
+  /*#ft p { margin-bottom: 20px; text-align: center;   }*/
+  h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  p{
+    font-size: 190%;
+    letter-spacing: 2px;
+    line-height: 120%;
+  }
+
+  img{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+  }
+
+  .name{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .c-info{
+    display: none;
+  }
+
+  #name{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    font-size: 230%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .message {
+    font-size: 230%;
+    letter-spacing: 2px;
+    line-height: 120%;
+  }
+}
